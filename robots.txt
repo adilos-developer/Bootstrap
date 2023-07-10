@@ -1,0 +1,21 @@
+# test your robots.txt with google tool : https://support.google.com/webmasters/answer/6062598
+# Allow (Only applicable for Googlebot): The command to tell Googlebot it can access a page or subfolder even 
+#   though its parent page or subfolder may be disallowed.
+# wait 120 msc  before you crawl the next page, and don't crawl links "disallowed"
+# pattern-matching: * is a wildcard that represents any sequence of characters, $  matches the end of the URL
+User-agent: googlebot
+Crawl-delay: 120
+Disallow: /admin_*.html
+Disallow: /_comments.html$
+Disallow: *?s=mobile
+Disallow: /plugins/
+
+# all other agents other than googlebot cannot crawl any page
+User-agent: *
+Disallow: /
+
+# Each subdomain on a root domain uses separate robots.txt files. 
+# This means that both blog.example.com and example.com should have their own robots.txt files (at blog.example.com/robots.txt and example.com/robots.txt).
+
+# It’s generally a best practice to indicate the location of any sitemaps associated with this domain at the bottom of the robots.txt file
+Sitemap: http://thomasjbradley.ca/sitemap.xml

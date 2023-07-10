@@ -1,0 +1,17 @@
+# humanstxt.org
+# TEAM
+# Use the humans.txt to put your info & credit other people who’s work you’ve used
+
+Designer & Developer: Adil EL Mansouri<xxx@gmail.com>
+Site: http://example.com
+GitHub: https://github.com/xxxxx
+Twitter: @Example
+Location: City, Country
+
+---
+
+# THANKS
+
+- “Dinosaur“ by Mrs. Ste Gosaourus
+  Used under CC-BY-NC-SA
+  https://thenounproject.com/

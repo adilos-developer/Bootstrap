@@ -1,0 +1,77 @@
+
+/* XX-Small devices (portrait phones, 300px and up) */
+@media (min-width: 300px) {
+    #remember-parent,input[type=text],input[type=password],button{
+        width: 300px !important;
+    }
+    body{
+        background-size: 75% !important;
+    }
+    #table{
+        background-size: 73% !important;
+    }
+}
+/* X-Small devices (portrait phones, 576px and up) */
+@media (min-width: 576px) {
+    #remember-parent,input[type=text],input[type=password],button{
+        width: 350px !important;
+    }
+    body{
+        background-size: 45% !important;
+    }
+    #table{
+        background-size: 43% !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #remember-parent,input[type=text],input[type=password],button{
+        width: 400px !important;
+    }
+    body{
+        background-size: 45% !important;
+    }
+    #table{
+        background-size: 43% !important;
+    }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #remember-parent,input[type=text],input[type=password],button{
+        width: 400px !important;
+    }
+    body{
+        background-size: 36% !important;
+    }
+    #table{
+        background-size: 34% !important;
+    }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #remember-parent,input[type=text],input[type=password],button{
+        width: 400px !important;
+    } 
+    body{
+        background-size: 26% !important;
+    }
+    #table{
+        background-size: 24% !important;
+    }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    #remember-parent,input[type=text],input[type=password],button{
+        width: 400px !important;
+    }
+    body{
+        background-size: 25% !important;
+    }
+    #table{
+        background-size: 23% !important;
+    }
+}

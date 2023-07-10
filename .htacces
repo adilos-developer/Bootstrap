@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteBase /
+# force Https
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[\w-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+ErrorDocument 404 /404.html
+Redirect 301 /wp-login.php http://404.com/
+Redirect 301 /xmlrpc.php http://404.com/
+Redirect 301 /api.php http://404.com/
+Redirect 301 /lequ.php http://404.com/
+Redirect 301 /action.php http://404.com/
+Redirect 301 /log_in.php http://404.com/
+
+Sitemap: http://dentiste/sitemap.xml
+
+# Basic authentication - username & password
+AuthType Basic
+AuthName "Password Required"
+AuthUserFile /etc/apache2/.htpasswd
+AuthGroupFile "/www/passwords/group.file"
+Require valid-user
+Require group admins
+# server was not set up to deliver m4a files
+AddType audio/mp4a-latm .m4a
+AddType text/html .shtml
